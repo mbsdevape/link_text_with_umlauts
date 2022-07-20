@@ -1,4 +1,4 @@
-# LinkText
+# LinkTextWithUmlauts
 
 [![Pub Package](https://img.shields.io/pub/v/link_text.svg?style=flat-square)](https://pub.dartlang.org/packages/link_text)
 
