@@ -1,4 +1,5 @@
 // Copyright 2019 Aleksander Woźniak
+// Modifications copyright (C) 2022 <Mannheim Business School/Marvin Wieduwilt>
 // SPDX-License-Identifier: Apache-2.0
 
 import 'package:flutter/gestures.dart';
@@ -62,8 +63,8 @@ class _LinkTextState extends State<LinkText> {
       return;
     }
 
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
     } else {
       throw 'Could not launch $url';
     }
@@ -75,7 +76,7 @@ class _LinkTextState extends State<LinkText> {
     final textStyle = widget.textStyle ?? themeData.textTheme.bodyText2;
     final linkStyle = widget.linkStyle ??
         themeData.textTheme.bodyText2?.copyWith(
-          color: themeData.accentColor,
+          color: themeData.colorScheme.secondary,
           decoration: TextDecoration.underline,
         );
 
