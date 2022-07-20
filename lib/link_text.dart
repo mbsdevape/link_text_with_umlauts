@@ -48,7 +48,7 @@ class LinkText extends StatefulWidget {
 class _LinkTextState extends State<LinkText> {
   final _gestureRecognizers = <TapGestureRecognizer>[];
   final _regex = RegExp(
-      r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%.,_\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\,+.~#?&//=]*)");
+      r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%.,_\+~#=\u00c4\u00e4\u00d6\u00f6\u00dc\u00fc\u00df]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\,+.~#?&//=\u00c4\u00e4\u00d6\u00f6\u00dc\u00fc\u00df]*)");
   final _shortenedRegex = RegExp(r"(.*)\?");
 
   @override
