@@ -34,6 +34,8 @@ Add to pubspec.yaml:
 
 ```yaml
 dependencies:
-  link_text: ^0.2.0
+    link_text_with_umlauts:
+    git:
+      url: https://github.com/mbsdevape/link_text_with_umlauts
 ```
 For more info, check out [example project](https://github.com/aleksanderwozniak/link_text/tree/master/example).
